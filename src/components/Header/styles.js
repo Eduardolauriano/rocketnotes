@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+// --------- HEADER -------------
 export const Container = styled.header`
   
 
@@ -17,6 +18,7 @@ export const Container = styled.header`
 
 `
 
+ // -------- PROFILE ----------
 export const Profile = styled.div`
 display: flex;
 align-items: center;
@@ -26,7 +28,7 @@ gap: 16px;
   width: 80px;
   height: 80px;
   border-radius: 50%;
-
+  filter: drop-shadow(1px 1px 10px orange);
 }
 
 > div {
@@ -40,4 +42,22 @@ gap: 16px;
     color: ${({theme}) => theme.COLORS.GRAY_100};
   }
 
+  strong{
+    filter: drop-shadow(1px 1px 5px orange);
+  }
+
+`
+
+// ---------- LOGOUT ------------
+
+export const Logout = styled.button`
+
+border: none;
+background: none;
+
+> svg {
+  color: ${({theme}) => theme.COLORS.GRAY_100};
+  font-size: 36px;
+  filter: drop-shadow(4px 2px 10px #002);
+}
 `
