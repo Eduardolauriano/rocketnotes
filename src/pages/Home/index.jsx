@@ -1,6 +1,7 @@
 import {FiPlus } from 'react-icons/fi'
 import {FiSearch } from 'react-icons/fi'
 import { Container, Brand, Menu, Search, Content, NewNote} from './styles'
+import { Link} from 'react-router-dom'
 
 import { Header } from '../../components/Header'
 import { Note } from '../../components/Note'
@@ -43,7 +44,7 @@ export function Home() {
       </Section>
     </Content>
 
-    <NewNote>
+    <NewNote to="/new">
     <FiPlus/>
     Criar Notas
     </NewNote>
